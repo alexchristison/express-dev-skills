@@ -27,13 +27,14 @@ function index(req, res) {
     //the model is responsible for creating data
     // Skill.create(req.body);
     // Do a redirect anytime data is changed
-    Skill.create(req, body)
+    Skill.create(req.body)
     res.redirect('/skills')
   }
   
   function deleteSkill(req, res) {
     Skill.deleteOne(req.params.id)
     res.redirect('/skills')
+    console.log(req.params.id, 'deletSkill')
   }
 
   module.exports = {
