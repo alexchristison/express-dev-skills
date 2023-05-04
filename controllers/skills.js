@@ -6,7 +6,8 @@ const Skill = require('../models/skill');
 module.exports = {
     index, 
     show,
-    new: newSkill
+    new: newSkill, 
+    create
   };
 
 function index(req, res) {
