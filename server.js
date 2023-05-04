@@ -6,7 +6,8 @@ var logger = require('morgan');
 const methodOverride = require('method-override');
 
 var indexRouter = require('./routes/index');
-var skillsRouter = require('./routes/skills');
+var usersRouter = require('./routes/users');
+const skillsRouter = require('./routes/skills')
 
 var app = express();
 
